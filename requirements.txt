@@ -1,0 +1,9 @@
+# Runtime dependencies (mirrors pyproject.toml).
+# Python 3.9+. CPU-only works out of the box; for CUDA install the matching torch build.
+opencv-python>=4.8.0              # image/video processing, GUI display
+numpy>=1.24.0
+ultralytics>=8.0.0                # YOLOv8 person detection
+facenet-pytorch>=2.5.0            # MTCNN face detection + FaceNet embeddings
+torch>=2.0.0
+torchvision>=0.15.0
+scipy>=1.10.0                     # cosine distance for face comparison

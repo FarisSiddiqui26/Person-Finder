@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest>=7.4
+matplotlib>=3.7.0                 # scripts/evaluate_accuracy.py charts
+scikit-learn>=1.3.0               # ROC AUC for the accuracy report

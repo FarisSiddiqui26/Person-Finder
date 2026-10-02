@@ -1,0 +1,59 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+
+# ── Virtual environments ──
+.venv/
+venv/
+env/
+ENV/
+
+# ── Tooling caches ──
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# ── Environment / secrets (RTSP URLs often contain camera passwords) ──
+.env
+.env.*
+!.env.example
+
+# ── Runtime output: alert snapshots + JSON log (large, and contains people's images) ──
+output/
+alerts/
+*.log
+
+# ── Model weights (ultralytics re-downloads yolov8n.pt automatically) ──
+models/*
+!models/.gitkeep
+*.pt
+*.pth
+*.onnx
+
+# ── Reference face photos (personal data; never commit real people's faces) ──
+data/known_faces/*
+!data/known_faces/.gitkeep
+
+# ── Input footage ──
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# ── OS / editor ──
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
